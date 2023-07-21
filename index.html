@@ -6,6 +6,7 @@
     <title>WeatherPulse</title>
     <link rel="icon" href="logo.png" type="image/icon type">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -20,11 +21,11 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="About.html">About</a>
               </li>
               
               <li class="nav-item">
-                <a class="nav-link" href="#">Usage Guide</a>
+                <a class="nav-link" href="Usage.html">Usage Guide</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -37,7 +38,7 @@
 
 
       <div class="container">
-        <h1 class="my-4 text-center">Weather for <span id="cityName"></span></h1>
+        <h1 class="my-4 text-center">Weather in <span id="cityName"></span></h1>
         <main>
           <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
             <div class="col">
@@ -158,16 +159,16 @@
                 </tr>
                 <tr>
                   <th scope="row" class="text-start">Kolkata</th>
-                  <td>1</td>
-                  <td>2</td>
-                  <td>3</td>
-                  <td>4</td>
-                  <td>5</td>
-                  <td>6</td>
-                  <td>7</td>
-                  <td>8</td>
-                  <td>9</td>
-                  <td>10</td>
+                  <td id="kolkataCloud"></td>
+                  <td id="kolkataFeelsLike"></td>
+                  <td id="kolkataHumidity"></td>
+                  <td id="kolkataMaxTemp"></td>
+                  <td id="kolkataMinTemp"></td>
+                  <td id="kolkataSunrise"></td>
+                  <td id="kolkataSunset"></td>
+                  <td id="kolkataTemp"></td>
+                  <td id="kolkataWindDegrees"></td>
+                  <td id="kolkataWindSpeed"></td>
                 </tr>
                 
               </tbody>
@@ -194,5 +195,7 @@
       </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script src="script2.js"></script>
+    <!-- <script src="script2.js"></script> -->
   </body>
 </html>
